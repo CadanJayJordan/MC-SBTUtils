@@ -1,0 +1,23 @@
+#Prefix for this plugin's messages
+#A space afterwards determines if there is a space between the prefix and the following message.
+prefix: '&c[&bSBT Utils&c] '
+
+#Prefix for the admin chat, comes after the prefix. The player name colour is the last colour in this prefix.
+#A space afterwards determines if there is a space between the prefix and the player name.
+adminChatPrefix: '&c[&bAC&c]&a ' 
+
+#Prefix for command spy, comes after the prefix. The player name colour is the last colour in this prefix.
+#A space afterwards determines if there is a space between the prefix and the player name.
+commandSpyPrefix: '&c[&bCS&c]&a '
+
+#The message displayed when a player tried to execute the command without permissions.
+noPermissions: '&4You don''t have the permission to use that command'
+
+#The admin chat error when no message is entered.
+noMessage: '&4Please enter a message'
+
+#The message when you try to run the commands as the console
+playerOnly: '&4You can only use this command as a player'
+
+#The message when a command is not recognised
+cmdNotRecongnised: '&4Command not recognised'

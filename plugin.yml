@@ -1,0 +1,46 @@
+name: SBTUtils
+version: 0.1.66
+main: com.sharpbrakesthings.sbtutilscore.SBTUtilsCore
+load: STARTUP
+author: sharp_brakes_things
+description: SBTUtils
+api-version: 1.15
+loadbefore: [SuperVanish, Essentials]
+#depend: [SuperVanish]
+
+commands:
+    cs:
+        aliases: [cspy, commandspy, commands, cs, scs]
+        description: Allows the seeing of all commands that any players that are not exempt try to execute.
+        usage: /<command>
+        
+    admin:
+        aliases: [adminui, admingui, agui, guiadmin]
+        description: Opens the admin GUI which contain administration tools.
+        usage: /<command>
+        
+    adminchat:
+        aliases: [ac, adminc, achat, ao, adminonly, aonly, admino]
+        description: Sends a message to anyone that has the admin chat permission.
+        usage: /<command> <message>
+        
+    sbtutils:
+        description: Informative Command. '/sbtutils reload' will reload the config.
+        usage: /<command>
+        
+permissions:
+    sbtutils.admin.commandspy:
+        description: Allows the use of command spy
+        default: op
+    sbtutils.admin.commandspy.exempt:
+        description: Exempts the given player from being able to be command spied upon
+        default: false
+    sbtutils.admin.gui:
+        description: Allows the opening of the admin GUI
+        default: op
+    sbtutils.admin.chat:
+        description: Allows the use of admin chat
+        default: op
+    sbtutils.admin.reload:
+        description: Allows the use of the reload command.
+        default: op
